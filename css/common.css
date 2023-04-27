@@ -1,0 +1,42 @@
+/*
+  全局通用样式
+*/
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* body{
+  background-color: #85FFBD;
+  background-image: linear-gradient(45deg, #324139 0%, #797510 100%);
+} */
+body{
+  min-width: 1230px;
+  overflow-anchor: none;
+  background-color: #eee;
+}
+a{
+  text-decoration: none;
+  color: black;
+}
+a:hover{
+  color: rgb(150, 195, 212);
+}
+ol,ul{
+  list-style-type: none;
+}
+*,*::before,*::after{
+  -moz-box-sizing: border-box;  /*盒型*/
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.clearfloat:after{ /*去浮动影响*/
+  display: block;
+  clear: both;
+  content: "";
+  visibility: hidden;
+  height: 0;
+}
+clearfloat{
+  zoom: 1;
+}
